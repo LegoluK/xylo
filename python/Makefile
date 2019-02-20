@@ -10,7 +10,7 @@ $(OUT_IMG): $(SCRIPT) $(ON_RESIZED_IMG)
 	./$(SCRIPT) $(ON_RESIZED_IMG) $(OUT_IMG)
 
 $(ON_RESIZED_IMG): $(ON_IMG)
-	convert $< -resize 640x480 $@
+	convert $< -resize 320x240 $@
 
 clean:
 	rm $(ON_RESIZED_IMG) $(OUT_IMG)
